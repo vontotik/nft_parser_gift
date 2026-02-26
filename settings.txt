@@ -1,0 +1,79 @@
+Install dependencies
+
+bash
+pip install -r requirements.txt
+(If requirements.txt does not exist, create it with the following content):
+
+text
+aiohttp
+aiogram
+beautifulsoup4
+pydantic-settings
+python-dotenv
+Configure environment variables
+Create a .env file in the project root and add:
+
+text
+TELEGRAM_BOT_TOKEN=your_bot_token
+# Optionally add more tokens:
+# TELEGRAM_BOT_TOKEN_2=...
+# TELEGRAM_BOT_TOKEN_3=...
+Set the chat ID for sending messages
+Open config.py and replace CHAT_ID = "" with the numeric ID of your chat (group or user).
+
+Adjust the list of monitored gifts
+The file nft_config.py contains the NFT_LINKS dictionary (active gifts) and PROMARKET_LINKS (pre‑market gifts). Edit or extend the lists as needed.
+
+Run the bot
+
+bash
+python main.py
+Notes
+Python 3.8 or higher is required.
+
+The bot uses asynchronous requests, so it runs fast and non‑blocking.
+
+Logs are stored in the logs/ folder (app.log and errors.log).
+
+Progress of the last found numbers is saved in last_found.json.
+
+
+Установите зависимости
+
+bash
+pip install -r requirements.txt
+(если файла requirements.txt нет, создайте его со следующим содержимым):
+
+text
+aiohttp
+aiogram
+beautifulsoup4
+pydantic-settings
+python-dotenv
+Настройте переменные окружения
+Создайте файл .env в корне проекта и добавьте:
+
+text
+TELEGRAM_BOT_TOKEN=ваш_токен_бота
+# При необходимости можно добавить дополнительные токены:
+# TELEGRAM_BOT_TOKEN_2=...
+# TELEGRAM_BOT_TOKEN_3=...
+Укажите ID чата для отправки сообщений
+Откройте config.py и замените CHAT_ID = "" на числовой ID вашего чата (группы или пользователя).
+
+Настройте список отслеживаемых подарков
+В файле nft_config.py находится словарь NFT_LINKS – активные подарки, и PROMARKET_LINKS – подарки в премаркете.
+При необходимости отредактируйте или дополните списки.
+
+Запустите бота
+
+bash
+python main.py
+Примечания
+Для корректной работы требуется Python 3.8 или выше.
+
+Бот использует асинхронные запросы, поэтому работает быстро и не блокируется.
+
+Логи сохраняются в папке logs/ (файлы app.log и errors.log).
+
+Прогресс последних найденных номеров хранится в last_found.json.
