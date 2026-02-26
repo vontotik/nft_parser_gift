@@ -16,3 +16,6 @@ Owner information (if available) and permanent links to the owner
 Buttons to quickly view the gift, the owner's profile, and the price page
 
 The bot automatically determines the last issued number and continues monitoring from there. It supports multiple gifts simultaneously and also watches pre‑market gifts; when a pre‑market gift becomes available, it is automatically added to active monitoring.
+
+![IMG_20260227_013750_895](https://github.com/user-attachments/assets/733a4563-b894-413a-9a97-65cec8b4ff44)
+
